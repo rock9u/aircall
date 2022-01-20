@@ -4,7 +4,7 @@ export async function getActivities() {
   try {
     const config = {
       baseURL: CALL_URL,
-      url: '/activities',
+      url: '/activities/',
       method: 'get',
     }
     let res = await Axios(config)
@@ -22,7 +22,7 @@ export async function getCallDetail(id) {
   try {
     const config = {
       baseURL: CALL_URL,
-      url: '/activities' + `/${id}`,
+      url: '/activities' + `/${id}/`,
       method: 'get',
       params: { id },
     }
@@ -41,7 +41,7 @@ export async function updateCall(id, isArchived) {
   try {
     const config = {
       baseURL: CALL_URL,
-      url: '/activities' + `/${id}`,
+      url: '/activities' + `/${id}/`,
       method: 'post',
       data: { is_archived: isArchived },
     }
@@ -61,7 +61,7 @@ export async function resetArchives() {
   try {
     const config = {
       baseURL: CALL_URL,
-      url: '/reset',
+      url: '/reset/',
       method: 'get',
     }
     let res = await Axios(config)
