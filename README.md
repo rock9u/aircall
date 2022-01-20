@@ -6,7 +6,5 @@
 
 ## Structure
 - `apis` contains api calls
-- 
 - `components` contains pure function react components
-- 
 - `pages` contains main view pages, with the most compplex logic
